@@ -133,6 +133,7 @@ body
     font-weight: 500
     font-size: 14px
     line-height: 23px
+    cursor: pointer
 
     &-primary
         background: #f47322
@@ -140,6 +141,21 @@ body
     &-default
         background: #fff
         color: #5F5F61
+    &-outline
+        padding: 15px 25px
+        background: transparent
+        border: 2px solid #F37321
+        border-radius: 33px
+        font-weight: 500
+        font-size: 16px
+        line-height: 19px
+        color: #F37321
+    &-center
+        width: 315px
+        height: 50px
+        display: block
+        margin: auto
+        margin-top: 62px
 
 .promo
     padding-top: 50px
@@ -206,6 +222,7 @@ body
         z-index: -2
 
 .delivery
+    margin-bottom: 100px
     &__title
         display: block
         font-weight: 500
@@ -225,6 +242,7 @@ body
         max-height: 180px
         border-radius: 18px
         overflow: hidden
+        cursor: pointer
     &__card-img
         width: 100%
         height: 100%
@@ -268,4 +286,138 @@ body
     &-celebrate
         background: #FEF7FE
         color: #49494F
+
+.section__grey
+    background: #F6F6F6
+    width: 100%
+
+.category
+    padding-top: 40px
+    padding-bottom: 60px
+
+.tabs
+    display: flex
+    margin: 0
+    padding: 0
+    list-style: none
+    margin-bottom: 62px
     
+    &__content
+        display: flex
+        justify-content: space-between
+
+    &__link
+        font-size: 20px
+        line-height: 23px
+        color: #49494F
+        text-decoration: none
+        margin-right: 58px
+        &.active 
+            color: #F37321
+
+    &__card
+        max-width: 270px
+        border-radius: 20px
+        overflow: hidden
+        background-color: #fff
+        box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1)
+
+        &-content
+            padding: 23px
+
+    &__image
+        max-width: 100%
+    
+    &__title
+        margin-top: 0
+        margin-bottom: 13px
+        font-weight: 500
+        font-size: 20px
+        line-height: 23px
+
+    &__description
+        font-weight: 500
+        font-size: 14px
+        line-height: 23px
+        color: #B9B9BE
+    
+    &__info
+        display: flex
+        align-items: center
+        justify-content: space-between
+
+    &__price
+        font-weight: 500
+        font-size: 23px
+        line-height: 23px
+        color: #4B4B51
+        display: block
+        margin-bottom: 5px
+    
+    &__weight
+        font-weight: 500
+        font-size: 17px
+        line-height: 20px
+        color: #AAAAB1
+
+.advantage
+    margin-bottom: 202px
+
+    &__section-title
+        margin-top: 100px
+        margin-bottom: 52px
+
+    &__card
+        max-width: 270px
+        max-height: 300px
+        border: 1px solid #E9E9E9
+        box-sizing: border-box
+        box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1)
+        border-radius: 18px
+        overflow: hidden
+        text-align: center
+        &s
+            display: flex
+            justify-content: space-between
+
+    &__image
+        display: block
+        margin: auto
+        padding-top: 30px
+    
+    &__title
+        font-weight: 700
+        font-size: 16px
+        line-height: 23px
+        margin-top: 36px
+        padding: 0 35px
+
+    &__description
+        font-size: 14px
+        line-height: 22px
+        color: #49494F
+        margin-top: 13px
+        padding: 24px
+        padding-top: 0
+
+.footer
+    padding: 40px 0
+    &__wrapper
+        display: flex
+        align-items: center
+    &__link
+        font-size: 16px
+        line-height: 23px
+        text-decoration-line: underline
+        color: #000
+        margin-right: 50px
+    &__logo
+        margin-right: 50px
+
+.social__link
+    margin-right: 20px
+    text-decoration: none
+    &s        
+        display: flex
+        align-items: center
+        margin-left: auto
