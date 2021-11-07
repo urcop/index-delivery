@@ -725,7 +725,7 @@ body {
 
 @media (max-width: 426px) {
   .container {
-    max-width: 425px;
+    max-width: 90%;
   }
   .delivery__card {
     max-width: 92%;
