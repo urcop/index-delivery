@@ -25,6 +25,7 @@ body {
 
 .search__form {
   margin-left: 76px;
+  margin-right: 190px;
   background: rgba(238, 238, 238, 0.71);
   border-radius: 10px;
   display: -webkit-box;
