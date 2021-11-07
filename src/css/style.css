@@ -731,6 +731,7 @@ body {
   }
   .tabs__link {
     margin-right: 20px;
+    font-size: 15px;
   }
   .advantage__card {
     max-width: 100%;
@@ -740,10 +741,11 @@ body {
   }
   .footer__logo {
     margin-right: 15px;
+    width: 105px;
   }
   .footer__link {
     margin-right: 10px;
-    font-size: 14px;
+    font-size: 10px;
   }
   .swiper {
     max-width: 100%;
@@ -751,8 +753,46 @@ body {
   .slide {
     padding: 30px;
   }
+  .slide__title {
+    font-size: 25px;
+    line-height: none;
+    margin-bottom: 0;
+  }
+  .slide__text {
+    font-size: 11px;
+    line-height: 14px;
+  }
+  .button {
+    padding: 6px 30px;
+  }
   .card {
     padding: 20px;
+  }
+  .card__title {
+    font-size: 17px;
+  }
+  .card__description {
+    font-size: 10px;
+    line-height: 17px;
+  }
+  .card__price {
+    font-size: 16px;
+    line-height: none;
+  }
+  .card__delivery {
+    font-size: 10px;
+    line-height: none;
+    margin-bottom: 16px;
+  }
+  .social__link {
+    margin-right: 10px;
+  }
+  .delivery__title {
+    font-size: 22px;
+    margin-bottom: 25px;
+  }
+  .promo {
+    padding-bottom: 50px;
   }
 }
 /*# sourceMappingURL=style.css.map */
