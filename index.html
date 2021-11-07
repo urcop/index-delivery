@@ -1,241 +1,376 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="src/css/normalize.css">
-    <link rel="stylesheet" href="src/css/style.css">
-    <title>food delivery</title>
-</head>
-<body>
-    <header class="header container">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/css/normalize.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="src/css/style.css" />
+    <title>Index Delivery</title>
+  </head>
+  <body>
+    <header class="container">
+      <div class="header">
         <a href="/" class="logo">
-            <img width="128px" src="src/icons/logo.png" alt="Logotype" class="logo-img">
+          <img
+            width="128px"
+            src="src/icons/logo.png"
+            alt="Logotype"
+            class="logo-img"
+          />
         </a>
         <form action="#" class="search__form">
-            <input class="search__input" type="search" placeholder="Блюда">
-            <button class="search__button">
-                <img src="src/icons/search-icon.svg" alt="Поиск">
-            </button>
+          <input class="search__input" type="search" placeholder="Блюда" />
+          <button class="search__button">
+            <img src="src/icons/search-icon.svg" alt="Поиск" />
+          </button>
         </form>
         <div class="auth">
-            <a href="#" class="login">Войти</a>
+          <a href="#" class="login">Войти</a>
         </div>
         <!-- /.auth -->
         <a href="#" class="shopping__cart">
-            <img src="src/icons/fi-rr-shopping-cart.svg" alt="Корзина">
-            <span class="shopping__counter">12</span>
+          <img src="src/icons/fi-rr-shopping-cart.svg" alt="Корзина" />
+          <span class="shopping__counter">12</span>
         </a>
+      </div>
     </header>
     <main class="container">
-        <div class="slider">
+      <!-- Slider main container -->
+      <div class="swiper container">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="slide slide-text-light slide__vitamins">
+              <div class="slide__content">
+                <h2 class="slide__title">Витаминная неделя</h2>
+                <p class="slide__text">
+                  Специальная овощная корзина. Новые продукты, специальные цены,
+                  скидки!
+                </p>
+                <a href="#" class="button button-primary"
+                  >Заказать со скидкой</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slide slide-text-light slide__autumn">
+              <div class="slide__content">
+                <h2 class="slide__title">Неделя осенних овощей</h2>
+                <p class="slide__text">
+                  Специальная овощная корзина. Новые продукты, специальные цены,
+                  скидки!
+                </p>
+                <a href="#" class="button button-primary"
+                  >Заказать со скидкой</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
             <div class="slide slide-text-light slide__summer">
-                <div class="slide__content">
-                    <h2 class="slide__title">Неделя летних овощей</h2>
-                    <p class="slide__text">Специальная овощная корзина. Новые продукты, специальные цены, скидки!</p>
-                    <a href="#" class="button button-primary">Заказать со скидкой</a>
-                </div>
+              <div class="slide__content">
+                <h2 class="slide__title">Неделя летних овощей</h2>
+                <p class="slide__text">
+                  Специальная овощная корзина. Новые продукты, специальные цены,
+                  скидки!
+                </p>
+                <a href="#" class="button button-primary"
+                  >Заказать со скидкой</a
+                >
+              </div>
             </div>
-            <!-- slide -->
+          </div>
         </div>
-        <!-- /slider -->
-        <div class="promo">
-            <section class="card card-text-light">
-                <img src="src/img/sweet.png" alt="сладкая корзина" class="card__image">
-                <div class="card__header">
-                    <h3 class="card__title">Сладкая корзина</h3>
-                    <p class="card__description">Произвольный выбор десертов по Вашему желанию.</p>
-                </div>
-                <!-- /.card__header -->
-                <div class="card__footer">
-                    <strong class="card__price">ОТ 1 300 ₽</strong>
-                    <span class="card__delivery">стоимость доставки до 200 ₽</span>
-                    <a href="#" class="button button-default">Собрать корзину</a>
-                </div>
-                <!-- /.card__footer -->
-            </section>
-            <section class="card card-text-light">
-                <img src="src/img/min.png" alt="сладкая корзина" class="card__image">
-                <div class="card__header">
-                    <h3 class="card__title">Минимум усилий</h3>
-                    <p class="card__description">Произвольный выбор продуктов по Вашему желанию.</p>
-                </div>
-                <!-- /.card__header -->
-                <div class="card__footer">
-                    <strong class="card__price">ОТ 700 ₽</strong>
-                    <span class="card__delivery">стоимость доставки до 200 ₽</span>
-                    <a href="#" class="button button-default">Собрать корзину</a>
-                </div>
-                <!-- /.card__footer -->
-            </section>
+        <!-- If we need navigation buttons -->
+        <div class="slider-buttons">
+          <div class="slider-button slider-button-prev">
+            <img src="src/icons/arrow-left.svg" alt="" />
+          </div>
+          <div class="slider-button slider-button-next">
+            <img src="src/icons/arrow-right.svg" alt="" />
+          </div>
         </div>
-        <!-- /.promo -->
-        <div class="delivery">
-            <h2 class="delivery__title">Доставка готовой еды на неделю</h2>
-            <div class="delivery__cards">
-                <div class="delivery__card">
-                    <img src="src/img/zoj.png" alt="" class="delivery__card-img">
-                    <span class="delivery__card-text tag-health">ЗОЖ</span>
-                </div>
-                <!-- /.delivery__card -->
-                <div class="delivery__card">
-                    <img src="src/img/vegetables.png" alt="" class="delivery__card-img">
-                    <span class="delivery__card-text tag-vegetable">Овощное</span>
-                </div>
-                <!-- /.delivery__card -->
-                <div class="delivery__card">
-                    <img src="src/img/meat.png" alt="" class="delivery__card-img">
-                    <span class="delivery__card-text tag-meat">Мясное</span>
-                </div>
-                <!-- /.delivery__card -->
-                <div class="delivery__card">
-                    <img src="src/img/chicken.png" alt="" class="delivery__card-img">
-                    <span class="delivery__card-text tag-bird">Птица</span>
-                </div>
-                <!-- /.delivery__card -->
-                <div class="delivery__card">
-                    <img src="src/img/fish.png" alt="" class="delivery__card-img">
-                    <span class="delivery__card-text tag-fish">Рыба</span>
-                </div>
-                <!-- /.delivery__card -->
-                <div class="delivery__card">
-                    <img src="src/img/child.png" alt="" class="delivery__card-img">
-                    <span class="delivery__card-text tag-child">Детское</span>
-                </div>
-                <!-- /.delivery__card -->
-                <div class="delivery__card">
-                    <img src="src/img/parents.png" alt="" class="delivery__card-img">
-                    <span class="delivery__card-text tag-parents">Родителям</span>
-                </div>
-                <!-- /.delivery__card -->
-                <div class="delivery__card">
-                    <img src="src/img/celebrate.png" alt="" class="delivery__card-img">
-                    <span class="delivery__card-text tag-celebrate">Праздничное</span>
-                </div>
-                <!-- /.delivery__card -->
-            </div>
+      </div>
+      <div class="promo">
+        <section class="card card-text-light">
+          <img
+            src="src/img/sweet.png"
+            alt="сладкая корзина"
+            class="card__image"
+          />
+          <div class="card__header">
+            <h3 class="card__title">Сладкая корзина</h3>
+            <p class="card__description">
+              Произвольный выбор десертов по Вашему желанию.
+            </p>
+          </div>
+          <!-- /.card__header -->
+          <div class="card__footer">
+            <strong class="card__price">ОТ 1 300 ₽</strong>
+            <span class="card__delivery">стоимость доставки до 200 ₽</span>
+            <a href="#" class="button button-default">Собрать корзину</a>
+          </div>
+          <!-- /.card__footer -->
+        </section>
+        <section class="card card-text-light">
+          <img
+            src="src/img/min.png"
+            alt="сладкая корзина"
+            class="card__image"
+          />
+          <div class="card__header">
+            <h3 class="card__title">Минимум усилий</h3>
+            <p class="card__description">
+              Произвольный выбор продуктов по Вашему желанию.
+            </p>
+          </div>
+          <!-- /.card__header -->
+          <div class="card__footer">
+            <strong class="card__price">ОТ 700 ₽</strong>
+            <span class="card__delivery">стоимость доставки до 200 ₽</span>
+            <a href="#" class="button button-default">Собрать корзину</a>
+          </div>
+          <!-- /.card__footer -->
+        </section>
+      </div>
+      <!-- /.promo -->
+      <div class="delivery">
+        <h2 class="delivery__title">Доставка готовой еды на неделю</h2>
+        <div class="delivery__cards">
+          <div class="delivery__card">
+            <img src="src/img/zoj.png" alt="" class="delivery__card-img" />
+            <span class="delivery__card-text tag-health">ЗОЖ</span>
+          </div>
+          <!-- /.delivery__card -->
+          <div class="delivery__card">
+            <img
+              src="src/img/vegetables.png"
+              alt=""
+              class="delivery__card-img"
+            />
+            <span class="delivery__card-text tag-vegetable">Овощное</span>
+          </div>
+          <!-- /.delivery__card -->
+          <div class="delivery__card">
+            <img src="src/img/meat.png" alt="" class="delivery__card-img" />
+            <span class="delivery__card-text tag-meat">Мясное</span>
+          </div>
+          <!-- /.delivery__card -->
+          <div class="delivery__card">
+            <img src="src/img/chicken.png" alt="" class="delivery__card-img" />
+            <span class="delivery__card-text tag-bird">Птица</span>
+          </div>
+          <!-- /.delivery__card -->
+          <div class="delivery__card">
+            <img src="src/img/fish.png" alt="" class="delivery__card-img" />
+            <span class="delivery__card-text tag-fish">Рыба</span>
+          </div>
+          <!-- /.delivery__card -->
+          <div class="delivery__card">
+            <img src="src/img/child.png" alt="" class="delivery__card-img" />
+            <span class="delivery__card-text tag-child">Детское</span>
+          </div>
+          <!-- /.delivery__card -->
+          <div class="delivery__card">
+            <img src="src/img/parents.png" alt="" class="delivery__card-img" />
+            <span class="delivery__card-text tag-parents">Родителям</span>
+          </div>
+          <!-- /.delivery__card -->
+          <div class="delivery__card">
+            <img
+              src="src/img/celebrate.png"
+              alt=""
+              class="delivery__card-img"
+            />
+            <span class="delivery__card-text tag-celebrate">Праздничное</span>
+          </div>
+          <!-- /.delivery__card -->
         </div>
+      </div>
     </main>
     <section class="category section__grey">
-        <div class="container">
-            <h2 class="section__title">Категории блюд</h2>
-            <ul class="tabs">
-                <li class="tabs__item">
-                    <a href="" class="tabs__link active">Популярные блюда</a>
-                </li>
-                <li class="tabs__item">
-                    <a href="" class="tabs__link">Овощное</a>
-                </li>
-                <li class="tabs__item">
-                    <a href="" class="tabs__link">Мясное</a>
-                </li>
-            </ul>
-            <!-- /.tabs -->
-            <div class="tabs__content">
-                <div class="tabs__card">
-                    <img src="src/img/tabs-image.png" alt="" class="tabs__image">
-                    <div class="tabs__card-content">
-                        <h3 class="tabs__title">Куриные крылья под соусом Терияки</h3>
-                        <p class="tabs__description">Соус Терияки придумали повора из Японии. По традиции его используют в качестве маринада для...</p>
-                        <div class="tabs__info">
-                            <div class="tabs__good">
-                                <span class="tabs__price">260 Р</span>
-                                <span class="tabs__weight">500 гр</span>
-                            </div>
-                            <button class="button button-outline">В корзину</button>
-                        </div>
-                    </div>
+      <div class="container">
+        <h2 class="section__title">Категории блюд</h2>
+        <ul class="tabs">
+          <li class="tabs__item">
+            <a href="" class="tabs__link active">Популярные блюда</a>
+          </li>
+          <li class="tabs__item">
+            <a href="" class="tabs__link">Овощное</a>
+          </li>
+          <li class="tabs__item">
+            <a href="" class="tabs__link">Мясное</a>
+          </li>
+        </ul>
+        <!-- /.tabs -->
+        <div class="tabs__content">
+          <div class="tabs__card">
+            <img src="src/img/tabs-image.png" alt="" class="tabs__image" />
+            <div class="tabs__card-content">
+              <h3 class="tabs__title">Куриные крылья под соусом Терияки</h3>
+              <p class="tabs__description">
+                Соус Терияки придумали повора из Японии. По традиции его
+                используют в качестве маринада для...
+              </p>
+              <div class="tabs__info">
+                <div class="tabs__good">
+                  <span class="tabs__price">260 Р</span>
+                  <span class="tabs__weight">500 гр</span>
                 </div>
-                <div class="tabs__card">
-                    <img src="src/img/tabs-image.png" alt="" class="tabs__image">
-                    <div class="tabs__card-content">
-                        <h3 class="tabs__title">Куриные крылья под соусом Терияки</h3>
-                        <p class="tabs__description">Соус Терияки придумали повора из Японии. По традиции его используют в качестве маринада для...</p>
-                        <div class="tabs__info">
-                            <div class="tabs__good">
-                                <span class="tabs__price">260 Р</span>
-                                <span class="tabs__weight">500 гр</span>
-                            </div>
-                            <button class="button button-outline">В корзину</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="tabs__card">
-                    <img src="src/img/tabs-image.png" alt="" class="tabs__image">
-                    <div class="tabs__card-content">
-                        <h3 class="tabs__title">Куриные крылья под соусом Терияки</h3>
-                        <p class="tabs__description">Соус Терияки придумали повора из Японии. По традиции его используют в качестве маринада для...</p>
-                        <div class="tabs__info">
-                            <div class="tabs__good">
-                                <span class="tabs__price">260 Р</span>
-                                <span class="tabs__weight">500 гр</span>
-                            </div>
-                            <button class="button button-outline">В корзину</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="tabs__card">
-                    <img src="src/img/tabs-image.png" alt="" class="tabs__image">
-                    <div class="tabs__card-content">
-                        <h3 class="tabs__title">Куриные крылья под соусом Терияки</h3>
-                        <p class="tabs__description">Соус Терияки придумали повора из Японии. По традиции его используют в качестве маринада для...</p>
-                        <div class="tabs__info">
-                            <div class="tabs__good">
-                                <span class="tabs__price">260 Р</span>
-                                <span class="tabs__weight">500 гр</span>
-                            </div>
-                            <button class="button button-outline">В корзину</button>
-                        </div>
-                    </div>
-                </div>
+                <button class="button button-outline">В корзину</button>
+              </div>
             </div>
-            <!-- /.tabs__content -->
-            <button class="button button-outline button-center">Больше блюд</button>
+          </div>
+          <div class="tabs__card">
+            <img src="src/img/tabs-image.png" alt="" class="tabs__image" />
+            <div class="tabs__card-content">
+              <h3 class="tabs__title">Куриные крылья под соусом Терияки</h3>
+              <p class="tabs__description">
+                Соус Терияки придумали повора из Японии. По традиции его
+                используют в качестве маринада для...
+              </p>
+              <div class="tabs__info">
+                <div class="tabs__good">
+                  <span class="tabs__price">260 Р</span>
+                  <span class="tabs__weight">500 гр</span>
+                </div>
+                <button class="button button-outline">В корзину</button>
+              </div>
+            </div>
+          </div>
+          <div class="tabs__card">
+            <img src="src/img/tabs-image.png" alt="" class="tabs__image" />
+            <div class="tabs__card-content">
+              <h3 class="tabs__title">Куриные крылья под соусом Терияки</h3>
+              <p class="tabs__description">
+                Соус Терияки придумали повора из Японии. По традиции его
+                используют в качестве маринада для...
+              </p>
+              <div class="tabs__info">
+                <div class="tabs__good">
+                  <span class="tabs__price">260 Р</span>
+                  <span class="tabs__weight">500 гр</span>
+                </div>
+                <button class="button button-outline">В корзину</button>
+              </div>
+            </div>
+          </div>
+          <div class="tabs__card">
+            <img src="src/img/tabs-image.png" alt="" class="tabs__image" />
+            <div class="tabs__card-content">
+              <h3 class="tabs__title">Куриные крылья под соусом Терияки</h3>
+              <p class="tabs__description">
+                Соус Терияки придумали повора из Японии. По традиции его
+                используют в качестве маринада для...
+              </p>
+              <div class="tabs__info">
+                <div class="tabs__good">
+                  <span class="tabs__price">260 Р</span>
+                  <span class="tabs__weight">500 гр</span>
+                </div>
+                <button class="button button-outline">В корзину</button>
+              </div>
+            </div>
+          </div>
         </div>
-        <!-- /.categories -->
+        <!-- /.tabs__content -->
+        <button class="button button-outline button-center">Больше блюд</button>
+      </div>
+      <!-- /.categories -->
     </section>
     <section class="advantage container">
-        <h2 class="advantage__section-title">Наши преимущества</h2>
-        <div class="advantage__cards">
-            <div class="advantage__card">
-                <img src="src/icons/advantage_icon1.svg" alt="" class="advantage__image">
-                <h3 class="advantage__title">Какой путь проходит ваша еда</h3>
-                <p class="advantage__description">Вы делаете заказ на коробку с недельным запасом полуфабрикатов и готовых блюд для всей семьи</p>
-            </div>
-            <div class="advantage__card">
-                <img src="src/icons/advantage_icon2.svg" alt="" class="advantage__image">
-                <h3 class="advantage__title">Как происходит производство</h3>
-                <p class="advantage__description">За день до доставки мы сами готовим блюда из натуральных продуктов без консервантов, красителей и гмо</p>
-            </div>
-            <div class="advantage__card">
-                <img src="src/icons/advantage_icon3.svg" alt="" class="advantage__image">
-                <h3 class="advantage__title">Высокие стандарты качества</h3>
-                <p class="advantage__description">Наши повара с многолетним опытом с любовью готовят каждую порцию блюда</p>
-            </div>
-            <div class="advantage__card">
-                <img src="src/icons/advantage_icon4.svg" alt="" class="advantage__image">
-                <h3 class="advantage__title">Быстрая и качественная доставка</h3>
-                <p class="advantage__description">Сами доставим всё прямов в вашу морозилку, сохранив температурный режим и качество наших блюд</p>
-            </div>
+      <h2 class="advantage__section-title">Наши преимущества</h2>
+      <div class="advantage__cards">
+        <div class="advantage__card">
+          <img
+            src="src/icons/advantage_icon1.svg"
+            alt=""
+            class="advantage__image"
+          />
+          <h3 class="advantage__title">Какой путь проходит ваша еда</h3>
+          <p class="advantage__description">
+            Вы делаете заказ на коробку с недельным запасом полуфабрикатов и
+            готовых блюд для всей семьи
+          </p>
         </div>
+        <div class="advantage__card">
+          <img
+            src="src/icons/advantage_icon2.svg"
+            alt=""
+            class="advantage__image"
+          />
+          <h3 class="advantage__title">Как происходит производство</h3>
+          <p class="advantage__description">
+            За день до доставки мы сами готовим блюда из натуральных продуктов
+            без консервантов, красителей и гмо
+          </p>
+        </div>
+        <div class="advantage__card">
+          <img
+            src="src/icons/advantage_icon3.svg"
+            alt=""
+            class="advantage__image"
+          />
+          <h3 class="advantage__title">Высокие стандарты качества</h3>
+          <p class="advantage__description">
+            Наши повара с многолетним опытом с любовью готовят каждую порцию
+            блюда
+          </p>
+        </div>
+        <div class="advantage__card">
+          <img
+            src="src/icons/advantage_icon4.svg"
+            alt=""
+            class="advantage__image"
+          />
+          <h3 class="advantage__title">Быстрая и качественная доставка</h3>
+          <p class="advantage__description">
+            Сами доставим всё прямов в вашу морозилку, сохранив температурный
+            режим и качество наших блюд
+          </p>
+        </div>
+      </div>
     </section>
     <footer class="footer section__grey">
-        <div class="container">
-            <div class="footer__wrapper">
-                <img src="src/icons/logo.png" width="205px" alt="" class="footer__logo">
-                <nav class="footer-nav">
-                    <a href="#" class="footer__link">Доставка и оплата</a>
-                    <a href="#" class="footer__link">Напишите нам</a>
-                </nav>
-                <div class="social__links">
-                    <a href="" class="social__link"><img src="src/icons/telegram.svg" alt=""></a>
-                    <a href="" class="social__link"><img src="src/icons/vk.svg" alt=""></a>
-                    <a href="" class="social__link"><img src="src/icons/instagram.svg" alt=""></a>
-                </div>
-            </div>
+      <div class="container">
+        <div class="footer__wrapper">
+          <img
+            src="src/icons/logo.png"
+            width="205px"
+            alt=""
+            class="footer__logo"
+          />
+          <nav class="footer-nav">
+            <a href="#" class="footer__link">Доставка и оплата</a>
+            <a href="#" class="footer__link">Напишите нам</a>
+          </nav>
+          <div class="social__links">
+            <a href="#" class="social__link"
+              ><img src="src/icons/telegram.svg" alt=""
+            /></a>
+            <a href="#" class="social__link"
+              ><img src="src/icons/vk.svg" alt=""
+            /></a>
+            <a href="#" class="social__link"
+              ><img src="src/icons/instagram.svg" alt=""
+            /></a>
+          </div>
         </div>
+      </div>
     </footer>
-</body>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="src/js/index.js"></script>
+  </body>
 </html>

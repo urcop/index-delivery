@@ -30,7 +30,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 620px;
+  width: 620px;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
@@ -144,6 +144,18 @@ body {
   background-size: cover;
 }
 
+.slide__autumn {
+  background: url(../img/autumn.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slide__vitamins {
+  background: url(../img/vitamins.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .slide:before {
   content: "";
   position: absolute;
@@ -155,6 +167,31 @@ body {
   height: 100%;
   background: -webkit-gradient(linear, left top, right top, color-stop(40.45%, rgba(0, 0, 0, 0.43)), to(rgba(0, 0, 0, 0)));
   background: linear-gradient(90deg, rgba(0, 0, 0, 0.43) 40.45%, rgba(0, 0, 0, 0) 100%);
+}
+
+.slider-button {
+  cursor: pointer;
+}
+
+.slider-buttons {
+  position: absolute;
+  bottom: 40px;
+  right: 46px;
+  z-index: 9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.swiper {
+  position: relative;
 }
 
 .button {
@@ -408,6 +445,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin: 0 -15px;
 }
 
 .tabs__link {
@@ -423,6 +461,7 @@ body {
 }
 
 .tabs__card {
+  margin: 15px;
   max-width: 270px;
   border-radius: 20px;
   overflow: hidden;
@@ -502,6 +541,7 @@ body {
   border-radius: 18px;
   overflow: hidden;
   text-align: center;
+  margin: 18px;
 }
 
 .advantage__cards {
@@ -511,6 +551,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin: 0 -18px;
 }
 
 .advantage__image {
@@ -575,5 +616,143 @@ body {
       -ms-flex-align: center;
           align-items: center;
   margin-left: auto;
+}
+
+@media (max-width: 1260px) {
+  .container {
+    max-width: 960px;
+  }
+  .search__form {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  .tabs__content {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .tabs__card {
+    -webkit-box-flex: 50%;
+        -ms-flex: 50%;
+            flex: 50%;
+    min-width: calc( 50% - 30px);
+  }
+  .advantage__cards {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .advantage__card {
+    -webkit-box-flex: 50%;
+        -ms-flex: 50%;
+            flex: 50%;
+    min-width: calc( 50% - 36px);
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 760px;
+  }
+  .slide {
+    padding: 60px;
+  }
+  .slider-buttons {
+    right: 23px;
+    bottom: 20px;
+  }
+  .card {
+    margin: 10px;
+    padding: 15px;
+  }
+  .delivery__card {
+    max-width: calc( 50% - 30px);
+  }
+  .promo {
+    margin: -10px;
+  }
+}
+
+@media (max-width: 776px) {
+  .container {
+    max-width: 560px;
+  }
+  .header {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .search__form {
+    -webkit-box-ordinal-group: 6;
+        -ms-flex-order: 5;
+            order: 5;
+    margin-right: 0;
+    margin-left: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .slider-buttons {
+    display: none;
+  }
+  .promo {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .tabs__card {
+    -webkit-box-flex: 25%;
+        -ms-flex: 25%;
+            flex: 25%;
+  }
+  .advantage__card {
+    -webkit-box-flex: 25%;
+        -ms-flex: 25%;
+            flex: 25%;
+  }
+  .footer__logo {
+    margin-right: 30px;
+  }
+  .footer__link {
+    margin-right: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    max-width: 90%;
+  }
+  .delivery__card {
+    max-width: 100%;
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
+  }
+  .tabs__card {
+    max-width: 100%;
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
+  }
+  .tabs__link {
+    margin-right: 20px;
+  }
+  .advantage__card {
+    max-width: 100%;
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
+  }
+  .footer__logo {
+    margin-right: 15px;
+  }
+  .footer__link {
+    margin-right: 10px;
+    font-size: 14px;
+  }
+  .swiper {
+    max-width: 100%;
+  }
+  .slide {
+    padding: 30px;
+  }
+  .card {
+    padding: 20px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
