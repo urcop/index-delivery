@@ -714,17 +714,29 @@ body {
 }
 
 @media (max-width: 576px) {
+  html {
+    width: 425px !important;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+  }
+  body {
+    width: 425px !important;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden !important;
+  }
   .container {
     max-width: 90%;
   }
   .delivery__card {
-    max-width: 100%;
+    max-width: 92%;
     -webkit-box-flex: 0;
         -ms-flex: none;
             flex: none;
   }
   .tabs__card {
-    max-width: 100%;
+    max-width: 92%;
     -webkit-box-flex: 0;
         -ms-flex: none;
             flex: none;
@@ -734,7 +746,7 @@ body {
     font-size: 15px;
   }
   .advantage__card {
-    max-width: 100%;
+    max-width: 92%;
     -webkit-box-flex: 0;
         -ms-flex: none;
             flex: none;
